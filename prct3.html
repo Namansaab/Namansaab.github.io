@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: rgb(30, 29, 27);
+            font-family: Helvetica, Arial, sans-serif;
+             font-size: 10px;
+        }
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+             justify-content: space-around;
+             display: flex;
+             top:0 ;
+             left:0 ;
+             width:100%;
+
+        }
+        #mylogo {
+           justify-self: left;
+            height: 7em;
+           
+        }
+        .navbar ul{
+             overflow: auto ; 
+            font-size: 1.5rem;
+            font-weight: 500;
+            border: 2px solid rgb(84, 67, 67);
+            border-radius: 20px;
+        }
+        .navbar li{
+            float:left;
+            list-style:none ; 
+            margin: 13px 20px;
+         
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: rgb(253, 216, 216);
+            padding: 12px 75px;
+            font-size: 5px;
+        }
+        
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+           
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: absolute;
+            height: 85vh;
+            width: 90vw;
+            
+             color: rgb(32, 178, 218);
+             bottom: 0; left: 5%; right: 20%; 
+        }
+       .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+       }
+       .maintext h1{
+          font-weight: 600;
+          font-size: 75px;
+        }
+        .maintext p {
+            font-size: 32px;
+        }
+        .maintext a {
+            font-size: 32px;
+        }
+        .resume{
+            padding: 6px;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: rgb(65, 231, 212);
+            box-shadow: 4px 4px 4px rgb(23, 135, 160);
+            text-decoration: none;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+            <a href="#"  class="mylogo">
+                <img src="logo o.jpg" alt="my logo" id="mylogo">
+            </a>
+        </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="image">
+            <img src="mypic.jpg" alt="mypic">
+        </div>
+        <div class = "maintext">
+            <h1>Hello , I am Naman Jain.</h1>
+            <p>This is my portfolio. It is made by me.</p>
+            <a href="Resume.pdf" class="resume">See My Resume</a>
+        </div>
+    </div>
+</body>
+
+</html>
